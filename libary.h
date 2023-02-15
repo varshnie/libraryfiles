@@ -5,5 +5,4 @@ char* strchar(char* str, char ch);
 char* strtoken(char* str, char sep);
 char strrev(char* str);
 void* memcopy(void* dest, const void* src, int n) ;
-void* memmovee(void* dest, const void* src, int n);
 
