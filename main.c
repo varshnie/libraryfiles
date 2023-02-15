@@ -1,13 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "stringcat.h"
-#include "stringcopy.h"
-#include "strncopy.h"
-#include "strreverse.h"
-#include "strtoken.h"
-#include "strchar.h"
-#include "memcopy.h"
-#include "memmove.h"
+#include "library.h"
 
 
 int main() 
@@ -69,4 +62,3 @@ int main()
 
 
     
-}
