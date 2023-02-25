@@ -25,7 +25,7 @@ char* stringcopy(char* destination, char* source) {
     }
     destination[i] = '\0';
     return destination;
-}
+
 
 
 char* strncopy(char* destination,char* source, int n)
