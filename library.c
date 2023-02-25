@@ -36,41 +36,9 @@ char* strncopy(char* destination,char* source, int n)
  {
     destination[i] = source[i];
  }
-
-
-    destination[i] = '\0';
-
-
  return destination;
     
 }
-
-
-char* strchar(char str[], char ch) {
-    int i, j,len, count = -1;
-    for(len=0;str[len] != '\0';len++); 
-   
-    for (i = 0; i < len; i++) {
-        if (str[i] == ch) {
-            count = i;
-            break;
-        }
-    }
-    
-    if(count ==-1)
-    {
-        return str;
-    }
-    
-    for (i = count, j = 0; i < len; i++, j++) {
-        
-        str[j] = str[i];
-        
-    }
-    str[j] = '\0';
-    return str;
-}
- 
 
 char strrev(char* str) {
     int i, j;
@@ -88,7 +56,6 @@ char strrev(char* str) {
 
     return *str;
 }
-
 
 
 char* strtoken(char str[], char sep)
@@ -125,6 +92,35 @@ char* strtoken(char str[], char sep)
     re[j] = '\0';
     return re;
 }
+
+
+char* strchar(char str[], char ch) {
+    int i, j,len, count = -1;
+    for(len=0;str[len] != '\0';len++); 
+   
+    for (i = 0; i < len; i++) {
+        if (str[i] == ch) {
+            count = i;
+            break;
+        }
+    }
+    
+    if(count ==-1)
+    {
+        return str;
+    }
+    
+    for (i = count, j = 0; i < len; i++, j++) {
+        
+        str[j] = str[i];
+        
+    }
+    str[j] = '\0';
+    return str;
+}
+ 
+
+
 
 
 void* memmovee(void* dest, const void* src, int n) {
