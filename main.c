@@ -36,6 +36,7 @@ int main()
     char i=' ';
     char* res=strtoken(h,i);
     printf("%s",res);
+    free(res);
     
   
     char j[] = "hello world";
