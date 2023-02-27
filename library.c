@@ -40,7 +40,7 @@ char* strncopy(char* destination,char* source, int n)
     
 }
 
-char strrev(char* str) {
+char* strrev(char str[]) {
     int i, j;
     char temp;
     int len ;
@@ -54,7 +54,7 @@ char strrev(char* str) {
         str[j] = temp;
     }
 
-    return *str;
+    return str;
 }
 
 
